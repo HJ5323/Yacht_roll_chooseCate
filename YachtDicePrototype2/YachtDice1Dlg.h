@@ -32,7 +32,7 @@ protected:
 	// Generated message map functions
 	virtual BOOL OnInitDialog();
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
-	afx_msg void OnDrawItem(int nIDCtl, LPDRAWITEMSTRUCT lpDrawItemStruct);
+//	afx_msg void OnDrawItem(int nIDCtl, LPDRAWITEMSTRUCT lpDrawItemStruct);
 	afx_msg void OnBnClickedRoll();
 	afx_msg HCURSOR OnQueryDragIcon();
 	LRESULT OnUpdateDice(WPARAM wParam, LPARAM lParam);
@@ -108,19 +108,22 @@ public:
 
 	void UpdateScoreBoard();
 	afx_msg void OnBnClickedp1_1();
-	//afx_msg void OnBnClickedp1_2();
-	//afx_msg void OnBnClickedP1_3();
-	//afx_msg void OnBnClickedP1_4();
-	//afx_msg void OnBnClickedP1_5();
-	//afx_msg void OnBnClickedP1_6();
-	//afx_msg void OnBnClickedP1_7();
-	//afx_msg void OnBnClickedP1_8();
-	//afx_msg void OnBnClickedP1_9();
-	//afx_msg void OnBnClickedP1_10();
-	//afx_msg void OnBnClickedP1_11();
-	//afx_msg void OnBnClickedP1_12();
+	afx_msg void OnBnClickedp1_2();
+	afx_msg void OnBnClickedP1_3();
+	afx_msg void OnBnClickedP1_4();
+	afx_msg void OnBnClickedP1_5();
+	afx_msg void OnBnClickedP1_6();
+	afx_msg void OnBnClickedP1_7();
+	afx_msg void OnBnClickedP1_8();
+	afx_msg void OnBnClickedP1_9();
+	afx_msg void OnBnClickedP1_10();
+	afx_msg void OnBnClickedP1_11();
+	afx_msg void OnBnClickedP1_12();
 
-	int m_ready_dices[5];
-	int m_top_dices[5];
+	//int m_ready_dices[5];
+	//int m_top_dices[5];
+
+	vector<int> m_ready_dices;
+	vector<int> m_top_dices;
 
 };
